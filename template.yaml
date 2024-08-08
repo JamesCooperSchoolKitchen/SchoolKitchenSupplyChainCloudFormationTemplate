@@ -5,17 +5,18 @@ Description: GB Ordering tool pipeline for SchoolKitchen
 Parameters:
   PermissionsBoundaryArn:
     Type: String
-    Description: arn:aws:iam::804073403250:policy/WS-01SP-pol_PlatformUserBoundary
+    Description: Platform User Boundary ARN
+    default: arn:aws:iam::849056612428:policy/SchoolKitchen-PlatformUserBoundary
 
   ServiceNamespace:
     Type: String
     Description: Service namespace
-    Default: data-foundations
+    Default: school-kitchen
 
   ServiceName:
     Type: String
     Description: Service name
-    Default: bp-df-sl-dt-focas
+    Default: ordering
 
   ScriptsBucketName:
     Type: String
@@ -29,7 +30,8 @@ Parameters:
 
   AccountName:
     Type: String
-    Description: ws-focas
+    Description: Account Name
+    default: school-kitchen
 
   AccountId:
     Type: String
