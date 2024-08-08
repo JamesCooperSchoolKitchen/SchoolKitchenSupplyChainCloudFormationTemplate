@@ -6,7 +6,7 @@ Parameters:
   PermissionsBoundaryArn:
     Type: String
     Description: Platform User Boundary ARN
-    default: arn:aws:iam::849056612428:policy/SchoolKitchen-PlatformUserBoundary
+    Default: arn:aws:iam::849056612428:policy/SchoolKitchen-PlatformUserBoundary
 
   ServiceNamespace:
     Type: String
@@ -31,11 +31,12 @@ Parameters:
   AccountName:
     Type: String
     Description: Account Name
-    default: school-kitchen
+    Default: school-kitchen
 
   AccountId:
     Type: String
     Description: AccountID can be found in identity access management
+    Default: 849056612428
 
   DeltaDay:
     Type: String
@@ -60,6 +61,7 @@ Parameters:
   WranglerLambdaLayerArn:
     Description: "Wrangler lambda layer ARN from S3"
     Type: String
+    Default: arn:aws:s3:::school-kitchen-supply-chain-scripts/dependencies/awswrangler/python.zip
 
   AlarmNotificationEmail:
     Type: String
@@ -74,16 +76,16 @@ Parameters:
   SenderUser:
     Type: String
     Description: Sender User to send email notification
-    Default: "david.nicholson@schoolkitchen.com"
+    Default: "james.cooper@schoolkitchen.com"
 
   RecipientUser:
     Type: String
     Description: Recipent User to receive email notification
-    Default: "david.nicholson@schoolkitchen.com"
+    Default: "james.cooper@schoolkitchen.com"
 
   TestRecipientUser:
     Type: String
-    Description: "david.nicholson@schoolkitchen.com"
+    Description: "james.cooper@schoolkitchen.com"
 
 Globals:
   Function:
