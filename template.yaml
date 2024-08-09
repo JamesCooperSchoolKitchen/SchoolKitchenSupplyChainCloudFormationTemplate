@@ -194,7 +194,7 @@ Resources:
   AthenaScriptRunner:
     Type: AWS::Serverless::Function
     Properties:
-      CodeUri: functions/athena_script_runner/
+      CodeUri: s3://school-kitchen-supply-chain-scripts/functions/athena_script_runner/
       Handler: app.lambda_handler
       Timeout: 900
       Environment:
@@ -2479,3 +2479,5 @@ Resources:
             - Effect: "Allow"
               Action: "s3:*"
               Resource: "*"
+              
+Outputs:
