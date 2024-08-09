@@ -2479,5 +2479,3 @@ Resources:
             - Effect: "Allow"
               Action: "s3:*"
               Resource: "*"
-              
-Outputs:
