@@ -177,7 +177,7 @@ Resources:
     Type: AWS::Serverless::LayerVersion
     Properties:
       LayerName: !Ref AWS::StackName
-      ContentUri: ./functions/common
+      ContentUri: s3://school-kitchen-supply-chain-scripts/functions/common/
       CompatibleRuntimes:
         - python3.8
     Metadata:
@@ -229,7 +229,7 @@ Resources:
   OrderToolDataDeletionP1:
     Type: AWS::Serverless::Function
     Properties:
-      CodeUri: functions/order_tool_date_deletion_p1/
+      CodeUri: s3://school-kitchen-supply-chain-scripts/functions/order_tool_date_deletion_p1/
       Handler: app.lambda_handler
       Timeout: 900
       Environment:
@@ -265,7 +265,7 @@ Resources:
   OrderToolDataDeletionP2:
     Type: AWS::Serverless::Function
     Properties:
-      CodeUri: functions/order_tool_date_deletion_p2/
+      CodeUri: s3://school-kitchen-supply-chain-scripts/functions/order_tool_date_deletion_p2/
       Handler: app.lambda_handler
       Timeout: 900
       Environment:
@@ -301,7 +301,7 @@ Resources:
   OrderToolDataDeletionP3:
     Type: AWS::Serverless::Function
     Properties:
-      CodeUri: functions/order_tool_date_deletion_p3/
+      CodeUri: s3://school-kitchen-supply-chain-scripts/functions/order_tool_date_deletion_p3/
       Handler: app.lambda_handler
       Timeout: 900
       Environment:
@@ -2460,7 +2460,7 @@ Resources:
   GetCurrentDay:
     Type: AWS::Serverless::Function
     Properties:
-      CodeUri: functions/current_day/
+      CodeUri: s3://school-kitchen-supply-chain-scripts/functions/current_day/
       Handler: app.lambda_handler
       Timeout: 900
       Policies:
