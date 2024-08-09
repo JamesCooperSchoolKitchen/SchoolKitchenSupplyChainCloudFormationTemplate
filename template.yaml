@@ -86,6 +86,7 @@ Parameters:
   TestRecipientUser:
     Type: String
     Description: "james.cooper@schoolkitchen.com"
+    Default: "james.cooper@schoolkitchen.com"
 
 Globals:
   Function:
